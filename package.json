@@ -1,0 +1,52 @@
+{
+  "name": "styleflux",
+  "version": "1.0.0",
+  "description": "Convert plain CSS into SCSS, tidy up your existing SCSS, and much more!",
+  "main": "./lib/index.js",
+  "bin": {
+    "styleflux": "./bin/styleflux.js"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./lib/**/*.js",
+    "start": "node ./bin/styleflux.js -o ./test/test.scss",
+    "monitor": "nodemon ./lib/index.js",
+    "bin": "node ./bin/styleflux.js",
+    "test": "mocha --recursive || true",
+    "build": "npm run lint && npm run test && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Firebrand/styleflux.git"
+  },
+  "author": "Alex Tsirozidis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Firebrand/styleflux/issues"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "preprocessor",
+    "sass",
+    "converter"
+  ],
+  "homepage": "https://github.com/Firebrand/styleflux#readme",
+  "dependencies": {
+    "args": "^4.0.0",
+    "chalk": "^2.4.1",
+    "color-namer": "^1.3.0",
+    "lodash": "^4.17.10",
+    "node-sass": "^4.9.0",
+    "perfectionist": "^2.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "mocha": "^5.2.0"
+  },
+  "debugmode": "true"
+}
