@@ -2,7 +2,7 @@
 
 # Styleflux
 
-Convert plain CSS into SCSS, tidy up your existing SCSS, and more!
+Convert plain CSS into SCSS, or CSS into a JS object or SCSS into tidier SCSS!
 
 ## Installation
 
