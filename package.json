@@ -1,6 +1,6 @@
 {
   "name": "styleflux",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Convert plain CSS into SCSS, or CSS into a JS object or SCSS into tidier SCSS!",
   "main": "./lib/index.js",
   "bin": {
@@ -35,6 +35,7 @@
     "args": "^4.0.0",
     "chalk": "^2.4.1",
     "color-namer": "^1.3.0",
+    "devbug": "^0.1.3",
     "lodash": "^4.17.10",
     "node-sass": "^4.9.0",
     "perfectionist": "^2.4.0"
